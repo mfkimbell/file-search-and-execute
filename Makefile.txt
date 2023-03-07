@@ -1,0 +1,5 @@
+
+
+build : search
+	gcc search.c -o search
+
