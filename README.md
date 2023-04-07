@@ -39,7 +39,7 @@ The following is an example of the code being run with no flags or commands.
     
 ![Screenshot 2023-04-07 at 12 04 20 PM](https://user-images.githubusercontent.com/107063397/230649169-2476d790-7bcb-49c1-87a1-39df8c4f8281.png)
     
-Next is an example of a flag that takes in a command line executable argument:
+Next is an example of a flag that takes in a command line executable argument, here i'm using `ls`:
     
 ```
     ./search -e ls
