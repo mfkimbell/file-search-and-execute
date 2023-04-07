@@ -27,6 +27,8 @@
     UNIX command is executed only once but uses all the file names as the arguments and 
     is executed after all other information on all other files has been displayed.
     
-    ```./search```
+    ```
+    ./search
+    ```
     
     ![Screenshot 2023-04-07 at 12 04 20 PM](https://user-images.githubusercontent.com/107063397/230648795-444050cc-e015-4fc9-b51a-bcff3079aa7b.png)
