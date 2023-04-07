@@ -16,7 +16,7 @@ The purpose of this project was to further understand file navigation and archit
     1) the file name contains the substring in the string pattern option, and 
     2) the depth of the file relative to the starting directory of the traversal 
     is less than or equal to the depth option. 
-    The starting directory itself has a depth of 0.
+    The starting directory itself has a depth of 0. 
   
 `-t <f or d>`
   t f - lists regular files only
