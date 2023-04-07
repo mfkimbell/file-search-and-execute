@@ -1,3 +1,7 @@
+## File Search
+
+# The purpose of this project was to further understand file navigation and architecture in C. The program takes in command line arguments and presents different data to the user depending on the flags the user provides. All flags can be used in conjunction with one another to produced more and more limited results for the data output. The flags are described below.
+
 ./search 
     This will execute the program from the current directory
 
@@ -26,10 +30,21 @@
 -E "<unix-command with arguments>" [Graduate Students Only] 
     UNIX command is executed only once but uses all the file names as the arguments and 
     is executed after all other information on all other files has been displayed.
+
+The following is an example of the code being run with no flags or commands.
     
     
     ./search
     
     
 ![Screenshot 2023-04-07 at 12 04 20 PM](https://user-images.githubusercontent.com/107063397/230649169-2476d790-7bcb-49c1-87a1-39df8c4f8281.png)
+    
+Next is an example of a flag that takes in a command line executable argument
+    
+```
+    ./search -e ls
+```
 
+![Screenshot 2023-04-07 at 12 04 47 PM](https://user-images.githubusercontent.com/107063397/230649912-7c3b6faa-17ee-450a-ae15-bd84687a9422.png)
+    
+All other flags will display the same results, but with the results limited to the restraint each flag has described above.
