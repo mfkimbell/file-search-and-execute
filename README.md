@@ -1,32 +1,32 @@
 # File Search
 The purpose of this project was to further understand file navigation and architecture in C. The program takes in command line arguments and presents different data to the user depending on the flags the user provides. All flags can be used in conjunction with one another to produced more and more limited results for the data output. The flags are described below.
 
-./search 
+`./search`
     This will execute the program from the current directory
 
--S  
+`-S` 
     This flag lists all files in the hierarchy and print the size, permissions, 
     and last access time next to the filename in parenthesis. Print 0 for the size of a directory.
 
--s <filesize in bytes> 
+`-s <filesize in bytes>`
     This flag lists all files in the hierarchy with file size less than or equal to the value specified.
 
--f <string pattern> <depth>
+`-f <string pattern> <depth>`
     This flag lists all files in the hierarchy with the following conditions: 
     1) the file name contains the substring in the string pattern option, and 
     2) the depth of the file relative to the starting directory of the traversal 
     is less than or equal to the depth option. 
     The starting directory itself has a depth of 0.
   
--t <f or d>
+`-t <f or d>`
   t f - lists regular files only
   t d - lists directories only
 
--e "<unix-command with arguments>" 
+`-e "<unix-command with arguments>"` 
     For each file that matches the search criteria the UNIX command specified with 
     arguments are executed after the other search information is dislpayed.
 
--E "<unix-command with arguments>" [Graduate Students Only] 
+`-E "<unix-command with arguments>"`
     UNIX command is executed only once but uses all the file names as the arguments and 
     is executed after all other information on all other files has been displayed.
 
