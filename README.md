@@ -36,15 +36,15 @@ The following is an example of the code being run with no flags or commands.
     
     ./search
     
+
+![Screenshot 2023-04-07 at 12 04 47 PM](https://user-images.githubusercontent.com/107063397/230649912-7c3b6faa-17ee-450a-ae15-bd84687a9422.png)
+
     
-![Screenshot 2023-04-07 at 12 04 20 PM](https://user-images.githubusercontent.com/107063397/230649169-2476d790-7bcb-49c1-87a1-39df8c4f8281.png)
-    
-Next is an example of a flag that takes in a command line executable argument, here i'm using `ls`:
+Next is an example of a flag that takes in a command line executable argument, here i'm using `ls`, the command is executed before the file is printed, so if a file is a directory, its contents are displayed above it's filename. If a file is not a directory, the path to the file is printed. To be clear ***any unix file can be executed, `ls` is just an example.***
     
 ```
     ./search -e ls
 ```
-
-![Screenshot 2023-04-07 at 12 04 47 PM](https://user-images.githubusercontent.com/107063397/230649912-7c3b6faa-17ee-450a-ae15-bd84687a9422.png)
+![Screenshot 2023-04-07 at 12 04 20 PM](https://user-images.githubusercontent.com/107063397/230649169-2476d790-7bcb-49c1-87a1-39df8c4f8281.png)
     
 All other flags will display the same results, but with the results limited to the restraint each flag has described above.
