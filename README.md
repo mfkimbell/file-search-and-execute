@@ -8,7 +8,7 @@ The purpose of this project was to further understand file navigation and archit
 * structs, for organizing file information and flag handlers
 * recursion, for transversing recursively into file heiarchy 
 * tokenizaiotn, for seperating command line arguments
-* `execvp`, for executing commands passed in from command line
+* `fork` and `exec`, for executing commands passed in from command line
 * sybolic links, the program handles files that point to other files
 
 ---
