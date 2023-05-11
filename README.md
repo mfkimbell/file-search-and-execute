@@ -1,4 +1,4 @@
-# file-search-and-execute
+# mulitple-file-search-and-execute
 
 The purpose of this project was to further understand file navigation and architecture in C. The program takes in command line arguments and presents different data to the user depending on the flags the user provides. All flags can be used in conjunction with one another to produced more and more limited results for the data output. The flags are described below.
 
