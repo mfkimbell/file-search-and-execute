@@ -2,6 +2,17 @@
 
 The purpose of this project was to further understand file navigation and architecture in C. The program takes in command line arguments and presents different data to the user depending on the flags the user provides. All flags can be used in conjunction with one another to produced more and more limited results for the data output. The flags are described below.
 
+---
+**Concepts Covered:**
+* stat and dirent, for displaying file information
+* structs, for organizing file information and flag handlers
+* recursion, for transversing recursively into file heiarchy 
+* tokenizaiotn, for seperating command line arguments
+* `execvp`, for executing commands passed in from command line
+* sybolic links, the program handles files that point to other files
+
+---
+
 `./search`
     This will execute the program from the current directory
 
@@ -33,7 +44,6 @@ The purpose of this project was to further understand file navigation and archit
 
 The following is an example of the code being run with no flags or commands.
     
-    
     ./search
     
 
@@ -47,4 +57,12 @@ Next is an example of a flag that takes in a command line executable argument, h
 ```
 ![Screenshot 2023-04-07 at 12 04 20 PM](https://user-images.githubusercontent.com/107063397/230649169-2476d790-7bcb-49c1-87a1-39df8c4f8281.png)
     
-All other flags will display the same results, but with the results limited to the restraint each flag has described above.
+In order to execute all of the commands at once after printing the file heiarchy, `-E` flag can be subsituted for the `-e` flag.
+
+<img width="1238" alt="Screenshot 2023-05-11 at 5 28 03 PM" src="https://github.com/mfkimbell/multiple-file-search-and-execute/assets/107063397/024de4d5-fba4-4465-bf40-a7ddfb607ee0">
+
+All flags can be used in conjunction with one another. For example, the `-S` flag adds extra information about the file to the printed heiarchy and the `-s <filesize>` flag only produces output for files within the filesize designated. Here is an example of ***only files less than 30 bytes*** being printed with extra information:
+
+<img width="718" alt="Screenshot 2023-05-11 at 5 38 58 PM" src="https://github.com/mfkimbell/multiple-file-search-and-execute/assets/107063397/68477f05-3d5e-411c-b018-4723f768c5fc">
+
+
